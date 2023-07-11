@@ -23,7 +23,7 @@ Nowadays, we have remote controls for our television sets and other electronic s
 
 # Working
 
-![working][flow_Diag](https://github.com/khyati-o4/Voice-Controlled-Home-Automation-System/assets/77969213/66481696-1695-4bdd-9fef-b90e9b3dc504)
+![flow_Diag](https://github.com/khyati-o4/Voice-Controlled-Home-Automation-System/assets/77969213/902229ea-2b85-4d3d-b2b7-defc63d0afa1)
 
 In this project, a simple Voice Activated Home Automation system is designed. Voice commandsare used to control different appliances. We will be using an app named as BT voice control for arduino .After making the necessary connections, we have to switch on the power supply to the circuit. Now, we need to pair the Phone’s Bluetooth to the HC – 05 Bluetooth Module. After the device is connected, by using the app we will start giving the voice commands. The command will also be displayed on the phone screen and later on the app will recognise the command and transfer it to the bluetooth module. When the string “turn on light” is detected by the app, it will send the string as “*turn on light#”. So, the actual message received by the Bluetooth Module is in the format of “*Message#”. The reason for padding the ‘*’ and ‘#’ at the beginning and end of the string is to identify the starting and ending of the message. The received message is compared with some predefined strings and if the message matches with any of them, then corresponding action like turning on or turning off the load happens. We have used the following commands: “turn on AC”, “turn off AC”, “turn on light”, “turn off light”, “turn on night lamp”, “turn off night lamp”, “turn on fan”, “turn off fan”, “turn on all” and “turn off all”
 
